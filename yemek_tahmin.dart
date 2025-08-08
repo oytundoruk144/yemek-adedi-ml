@@ -105,7 +105,7 @@ class _GirisimOnerisiSayfasiState extends State<GirisimOnerisiSayfasi> {
   }
 
   Future<void> _sendData() async {
-    final url = Uri.parse('http://192.168.1.8:5000/tahmin');
+    final url = Uri.parse('http://<<ip-adresin>>:5000/tahmin');
     final body = jsonEncode({
       "kayitli": kayitli,
       "mevcut": mevcut,
@@ -393,4 +393,5 @@ class _GirisimOnerisiSayfasiState extends State<GirisimOnerisiSayfasi> {
       ),
     );
   }
+
 }
